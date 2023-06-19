@@ -1,4 +1,5 @@
-﻿using System.Threading.Channels;
+﻿using System.ComponentModel;
+using System.Threading.Channels;
 
 namespace MethodsExercise
 {
@@ -14,7 +15,8 @@ namespace MethodsExercise
             Console.WriteLine(difference);
             int sum = Methods.Add(7,9);
             Console.WriteLine(sum);
-
+            int sumMultiple = Methods.AddMultiple(new int[] { 1, 2, 3, 4, 5 });
+            Console.WriteLine(sumMultiple);
             Console.WriteLine("What is your name?");
             var name = Console.ReadLine(); // input
             Console.WriteLine("What is your favorite color");

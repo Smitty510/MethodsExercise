@@ -10,7 +10,7 @@ namespace MethodsExercise
     internal class Methods
     {
         public static int Add(int a, int b)
-        { 
+        {
             return a + b;
         }
         public static int Subtract(int a, int b)
@@ -18,16 +18,28 @@ namespace MethodsExercise
             return a - b;
         }
         public static int Multiply(int a, int b)
-        { 
-            return a * b; 
+        {
+            return a * b;
         }
 
         public static double Divide(double a, double b)
-        { 
-            return a / b; 
+        {
+            return a / b;
         }
 
 
-       
+
+        public static int AddMultiple(params int[] nums)
+        {
+            int sum = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i];
+          
+
+            }
+            return sum;
+        }
+
     }
 }
